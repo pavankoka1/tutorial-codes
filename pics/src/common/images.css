@@ -1,0 +1,18 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.images {
+    display: flex;
+    flex-flow: column wrap;
+    height: 600px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+}
+
+.image{
+    width: 30vh;
+    align-self: flex-start;
+    padding: 5px;
+}

@@ -1,0 +1,133 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #333;
+}
+
+.out-box {
+    height: 600px;
+}
+
+.box {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+        border-radius: 0;
+    }
+    25% {
+        background-color: lightcoral;
+        left: 300px;
+        top: 0px;
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        background-color: lightsalmon;
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+    }
+    75% {
+        background-color: lightblue;
+        left: 0px;
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100% {
+        background-color: white;
+        left: 0px;
+        top: 0px;
+        border-radius: 50% 50% 50% 50%;
+    }
+}
+
+.out-box2 {
+    height: 500px;
+}
+
+.box2 {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.box2:hover {
+    background-color: red;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+.out-box3 {
+    height: 500px;
+}
+
+.box3 {
+    background-color: white;
+    margin: 300px;
+    height: 30px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.box3:hover {
+    background-color: lightcoral;
+    animation-name: boxanimation;
+    animation-duration: 0.00001s;
+    animation-iteration-count: 30000;
+    animation-timing-function: ease-out;
+}
+
+@keyframes boxanimation {
+    25% {
+        margin-left: 295px;
+    }
+    75% {
+        margin-left: 305px;
+    }
+}
+
+.box4 {
+    background-color: white;
+    margin: auto;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+
+.box4N {
+    background-color: lightcoral;
+    animation-name: boxanimation2;
+    animation-duration: 0.00001s;
+    animation-iteration-count: 30000;
+    animation-timing-function: ease-out;
+}
+
+@keyframes boxanimation2 {
+    25% {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+    75% {
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+}
